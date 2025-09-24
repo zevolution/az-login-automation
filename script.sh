@@ -126,7 +126,7 @@ proc handle_selection_prompt {tenant_choice} {
     if {$tenant_choice != ""} {
         log_user 1
         puts "\033\[32m\[SCRIPT\] Auto-selecting option: \[$tenant_choice\]\033\[0m"
-		put ""
+		puts ""
         log_user 0
         send "$tenant_choice\r"
         return 0
